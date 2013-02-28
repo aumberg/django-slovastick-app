@@ -1,0 +1,16 @@
+Score Statements:
+• a - Advance score time by a specified amount
+• b - Resets the clock
+• e - Marks the end of the last section of the score
+• f - Causes a GEN subroutine to place values in a stored function table
+• i - Makes an instrument active at a specific time and for a certain duration
+• m - Sets a named mark in the score
+• n - Repeats a section
+• q - Used to quiet an instrument
+• r - Starts a repeated section
+• s - Marks the end of a section
+• t - Sets the tempo
+• v - Provides for locally variable time warping of score events
+• x - Skip the rest of the current section
+• { - Begins a non-sectional, nestable loop.
+• } - Ends a non-sectional, nestable loop.

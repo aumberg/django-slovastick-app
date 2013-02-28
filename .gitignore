@@ -1,0 +1,3 @@
+*.pyc
+slovastick_app/static/*
+slovastick_app/tmpfs/*.csd

@@ -1,0 +1,4 @@
+include slovastick_app/braille_json/braille.json
+include slovastick_app/tmpfs/create_tmpfs_there
+
+recursive-include slovastick_app/static *

@@ -1,0 +1,9 @@
+--- Unicode, utf-8:
+1. http://unicode-table.com/
+
+--- Csound:
+1. http://www.csounds.com/manual/html/CsBeats.html
+2. http://ecmc.rochester.edu/ecmc/docs/csound-manual-5.14/BeatsTop.html
+3. CSound manual: Appendix B. Pitch Conversion -page 3114
+4. http://www.music.buffalo.edu/hiller/accci/
+5. ftp://ftp.cs.bath.ac.uk/pub/dream/
