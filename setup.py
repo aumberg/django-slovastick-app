@@ -4,7 +4,7 @@ setup(
     name='django-slovastick-app',
     description=\
         'Research in the perception of sound information based on the Braille',
-    version="0.0.1",
+    version="0.0.2",
     packages=find_packages(),
     author='Alexander Umberg',
     author_email='slovastick@mail.ru',

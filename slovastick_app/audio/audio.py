@@ -1,6 +1,6 @@
 # ~*~ coding: utf-8 ~*~
 
-import subprocess, base64, logging, urllib, pprint, json, time, shlex, os
+import subprocess, base64, time, shlex, os
 import slovastick_app.braille_json.braille_json as braille_json, slovastick_app.lib as lib
 import django.conf
 
@@ -48,10 +48,6 @@ e
 """
 
     def __init__(self, text="", settings={}):
-            # for no debug all instruments modules saved in self.modules
-            # if django.conf.settings.DEBUG :
-            #     self.modules = {}
-
         self.modules = {}
         # 
         self.text = text
@@ -114,6 +110,7 @@ e
                             }) + "\n"
 
                         self.modules[insName] = mod
+
                     except Exception, e :
                         print thePackagePath
                         print "error !!!!! in get_score " + thePackagePath
@@ -158,8 +155,7 @@ e
         out     = proc2.communicate()[0]
 
         # delete file from tmpfs
-        # !!!for debug in csound editor like qutesound, save this file,
-        # and set output option to -odac 
+        # !!!for debug save file (change output option to -odac)
         os.unlink(theFilePath)
         # 
 

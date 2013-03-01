@@ -21,6 +21,6 @@ instr %s1
     af3     reson   asig, 440, 400
     aout    balance af3*0.5+5*asig, asig
     aL, aR  pan2    aout, iPan
-            outs aL, aR
+            outs aL*0.8, aR*0.8
 endin
 """ % settings["insPrefix"]
