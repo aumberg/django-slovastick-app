@@ -14,7 +14,7 @@ pathStatic      = os.path.join(settings.STATIC_ROOT, appName)
 pathStaticWav   = os.path.join(pathStatic, "wav")
 
 def response_text(out):
-    return HttpResponse(text, content_type="text/plain")
+    return HttpResponse(out, content_type="text/plain")
 
 def response_audio(out):
     response = HttpResponse(out, content_type='audio/x-wav')
@@ -26,3 +26,5 @@ def response_cache(response, timeMinutes=2):
     expires = datetime.utcnow() + timedelta(minutes=timeMinutes)
     response['Cache-Control']   = "public, max-age=" + str(3600 * timeMinutes)
     response['Expires']         = expires.strftime("%a, %d %b %Y %H:%M:%S GMT")
+
+    return response

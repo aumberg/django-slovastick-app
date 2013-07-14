@@ -1,9 +1,6 @@
-from django.conf.urls import patterns, include, url
-from django.views.generic.simple import direct_to_template
-from django.conf import settings
+from django.conf.urls import patterns, url
 
-urlpatterns = patterns('',
-    # url(r'^$', 'sound.views.test'),s
-    url(r'^$','slovastick_app.views.hello'),
-    url(r'^', 'slovastick_app.views.index')
+urlpatterns = patterns('slovastick_app.views',
+    url(r'^(?P<text>\S+)$', 'index'),
+    url(r'^$', 'hello'),
 )
